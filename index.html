@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strategic Management Study Book — Arab Academy GSB</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+/* Master Map specific styles */
+.map-hero {
+  background: linear-gradient(135deg, var(--navy) 0%, #2a1a44 50%, var(--crimson) 100%);
+  color: #fff;
+  padding: 70px 40px 60px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.map-hero::before { content: ''; position: absolute; top: -60px; left: -60px; width: 320px; height: 320px; background: rgba(255,255,255,0.03); border-radius: 50%; }
+.map-hero::after { content: ''; position: absolute; bottom: -80px; right: -80px; width: 400px; height: 400px; background: rgba(255,255,255,0.03); border-radius: 50%; }
+.institution { font-size: 0.85rem; letter-spacing: 2px; opacity: 0.7; text-transform: uppercase; margin-bottom: 12px; }
+.map-hero h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; margin-bottom: 12px; line-height: 1.1; }
+.map-hero .course-subtitle { font-size: 1.1rem; opacity: 0.85; margin-bottom: 32px; }
+.meta-row { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-top: 28px; }
+.meta-chip { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); padding: 6px 18px; border-radius: 20px; font-size: 0.84rem; }
+
+/* Grade distribution */
+.grade-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin: 20px 0; }
+.grade-item { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px; text-align: center; }
+.grade-pct { font-size: 2rem; font-weight: 800; color: var(--crimson); }
+.grade-name { font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; }
+.grade-bar { margin-top: 10px; background: var(--border); border-radius: 20px; height: 6px; overflow: hidden; }
+.grade-bar-fill { height: 100%; border-radius: 20px; background: linear-gradient(90deg, var(--navy), var(--crimson)); }
+
+/* Module cards */
+.modules-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; margin: 24px 0; }
+.module-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); transition: all 0.25s; text-decoration: none; color: var(--text); display: flex; flex-direction: column; }
+.module-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); border-color: var(--crimson); }
+.card-header { padding: 22px 22px 16px; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 14px; }
+.module-num { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.1rem; color: #fff; flex-shrink: 0; }
+.num-a { background: linear-gradient(135deg, #1a2744, #243360); }
+.num-b { background: linear-gradient(135deg, #8B1A1A, #a82020); }
+.num-c { background: linear-gradient(135deg, #B8860B, #d4a017); }
+.num-d { background: linear-gradient(135deg, #4a1a6b, #6b2090); }
+.card-header-text { flex: 1; }
+.card-module-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px; }
+.card-module-title { font-size: 1.05rem; font-weight: 700; line-height: 1.3; }
+.card-body { padding: 16px 22px 20px; flex: 1; }
+.card-topics { list-style: none; padding: 0; }
+.card-topics li { padding: 5px 0 5px 20px; position: relative; font-size: 0.87rem; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+.card-topics li:last-child { border-bottom: none; }
+.card-topics li::before { content: '›'; position: absolute; left: 0; color: var(--crimson); font-weight: 700; }
+.card-footer { padding: 14px 22px; background: rgba(26,39,68,0.04); border-top: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
+.status-pill { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; }
+.status-available { background: rgba(34,139,34,0.12); color: #1a7a1a; }
+.date-tag { font-size: 0.78rem; color: var(--text-muted); }
+
+/* Timeline */
+.timeline { position: relative; padding-left: 30px; margin: 16px 0; }
+.timeline::before { content: ''; position: absolute; left: 8px; top: 0; bottom: 0; width: 2px; background: var(--border); }
+.timeline-item { position: relative; margin-bottom: 16px; }
+.timeline-item::before { content: ''; position: absolute; left: -26px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--crimson); border: 2px solid var(--bg); }
+.timeline-date { font-size: 0.78rem; color: var(--text-muted); font-weight: 600; }
+.timeline-title { font-weight: 700; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="header-brand">
+      <span class="header-logo">SM</span>
+      <span class="header-title">Study Book</span>
+    </a>
+    <nav class="header-nav">
+      <a href="https://pixelcraft-creator.github.io/mba-study-library/" class="nav-btn">🏛 MBA Library</a>
+      <button onclick="toggleTheme()" class="nav-btn">◑ Theme</button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrap">
+
+  <!-- HERO -->
+  <div class="map-hero">
+    <div class="institution">Arab Academy for Science, Technology &amp; Maritime Transport · Graduate School of Business</div>
+    <h1>Strategic Management</h1>
+    <div class="course-subtitle">MBA Study Book — Year 2 Major · Semester 1</div>
+    <div class="meta-row">
+      <span class="meta-chip">👩‍🏫 Dr. Raghda Fawzy · MNG930 · 3 Credit Hours</span>
+      <span class="meta-chip">📚 David, Strategic Management: Concepts and Cases, 18th Ed.</span>
+      <span class="meta-chip">🎯 1 Module Available</span>
+      <span class="meta-chip">💻 Online · Wednesdays</span>
+    </div>
+  </div>
+
+  <!-- GRADE DISTRIBUTION -->
+  <div class="card">
+    <div class="card-title"><span class="icon">📊</span> Grade Distribution</div>
+    <div class="grade-grid">
+      <div class="grade-item">
+        <div class="grade-pct">10%</div>
+        <div class="grade-name">Attendance &amp; Participation</div>
+        <div class="grade-bar"><div class="grade-bar-fill" style="width:10%"></div></div>
+      </div>
+      <div class="grade-item">
+        <div class="grade-pct">20%</div>
+        <div class="grade-name">Case Studies, Debates &amp; Assignments</div>
+        <div class="grade-bar"><div class="grade-bar-fill" style="width:20%"></div></div>
+      </div>
+      <div class="grade-item">
+        <div class="grade-pct">30%</div>
+        <div class="grade-name">Midterm Project &amp; Presentation</div>
+        <div class="grade-bar"><div class="grade-bar-fill" style="width:30%"></div></div>
+      </div>
+      <div class="grade-item">
+        <div class="grade-pct">40%</div>
+        <div class="grade-name">Final Group Project &amp; Presentation</div>
+        <div class="grade-bar"><div class="grade-bar-fill" style="width:40%"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COURSE MODULES -->
+  <h2 class="section-title">Course Modules</h2>
+
+  <div class="modules-grid">
+    <a href="m01-nature-of-strategic-management.html" class="module-card">
+      <div class="card-header">
+        <div class="module-num num-a">01</div>
+        <div class="card-header-text">
+          <div class="card-module-label">Lecture 1 · 16 Sep 2026</div>
+          <div class="card-module-title">The Nature of Strategic Management</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <ul class="card-topics">
+          <li>Definition, the strategic-management model, and the three stages</li>
+          <li>Benefits, reasons firms do not plan, and planning pitfalls</li>
+          <li>Business vs. military strategy; the competitive-advantage cycle</li>
+        </ul>
+      </div>
+      <div class="card-footer">
+        <span class="status-pill status-available">✓ Available</span>
+        <span class="date-tag">Week 1</span>
+      </div>
+    </a>
+  </div>
+
+  <!-- SYLLABUS TOPICS + TIMELINE -->
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title"><span class="icon">🗂️</span> Syllabus Topics</div>
+      <p style="font-size:0.87rem; color:var(--text-muted); margin-bottom:12px;">Modules are added as lecture material is provided. The syllabus covers:</p>
+      <ul class="check-list">
+        <li>Basic concepts of strategic management</li>
+        <li>Environmental scanning and industry analysis</li>
+        <li>Internal scanning: organizational analysis</li>
+        <li>Mid-Term Project</li>
+        <li>Strategy formulation: situation analysis and business strategy</li>
+        <li>Strategy formulation: corporate &amp; functional strategy and strategic choice</li>
+        <li>Strategy implementation: organizing for action, staffing and directing</li>
+        <li>Evaluation and control</li>
+        <li>Final Project</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="icon">📅</span> Course Schedule</div>
+      <p style="font-size:0.87rem; color:var(--text-muted); margin-bottom:12px;">Online, Wednesdays at 7 pm until 29 Oct, then 6 pm onwards.</p>
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-date">16 Sep 2026</div><div class="timeline-title">Lecture 1</div></div>
+        <div class="timeline-item"><div class="timeline-date">23 Sep 2026</div><div class="timeline-title">Lecture 2 · Assignment brief</div></div>
+        <div class="timeline-item"><div class="timeline-date">30 Sep 2026</div><div class="timeline-title">Lecture 3 · Mid-Term brief · Individual assignment due</div></div>
+        <div class="timeline-item"><div class="timeline-date">7 Oct 2026</div><div class="timeline-title">Lecture 4</div></div>
+        <div class="timeline-item"><div class="timeline-date" style="color:var(--crimson); font-weight:700;">14 Oct 2026</div><div class="timeline-title">Lecture 5 · 🎤 Mid-Term group project presentation</div></div>
+        <div class="timeline-item"><div class="timeline-date">21 Oct 2026</div><div class="timeline-title">Lecture 6</div></div>
+        <div class="timeline-item"><div class="timeline-date">28 Oct 2026</div><div class="timeline-title">Lecture 7 · Final brief</div></div>
+        <div class="timeline-item"><div class="timeline-date">4 Nov 2026</div><div class="timeline-title">Lecture 8</div></div>
+        <div class="timeline-item"><div class="timeline-date">11 Nov 2026</div><div class="timeline-title">Lecture 9</div></div>
+        <div class="timeline-item"><div class="timeline-date" style="color:var(--crimson); font-weight:700;">18 Nov 2026</div><div class="timeline-title">Lecture 10 · 🎤 Final group project presentation</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STUDY TIPS -->
+  <div class="card">
+    <div class="card-title"><span class="icon">💡</span> How to Use This Study Book</div>
+    <div class="grid-3">
+      <div class="compare-card blue-accent">
+        <h4>📖 Concepts First</h4>
+        <p style="font-size:0.87rem; color:var(--text-muted);">Read definitions and frameworks carefully. Each module opens with learning objectives to set your focus.</p>
+      </div>
+      <div class="compare-card red-accent">
+        <h4>🧩 Apply to Cases</h4>
+        <p style="font-size:0.87rem; color:var(--text-muted);">The course is case-based. Use each module's framework as a checklist when you analyze a company case.</p>
+      </div>
+      <div class="compare-card gold-accent">
+        <h4>🔄 Active Recall</h4>
+        <p style="font-size:0.87rem; color:var(--text-muted);">Use the Active Recall sections at the end of each module — flip answers and test yourself.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+function toggleTheme() {
+  const root = document.documentElement;
+  const current = root.getAttribute('data-theme');
+  root.setAttribute('data-theme', current === 'dark' ? 'light' : 'dark');
+  localStorage.setItem('sm-theme', root.getAttribute('data-theme'));
+}
+(function() {
+  const saved = localStorage.getItem('sm-theme');
+  if (saved) document.documentElement.setAttribute('data-theme', saved);
+})();
+</script>
+</body>
+</html>
