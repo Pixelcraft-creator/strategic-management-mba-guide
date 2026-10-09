@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mid-Term Project Hub — Strategic Management Study Book</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.midterm-hero {
+  background: linear-gradient(135deg, #5c1010 0%, #1a2744 60%, #2a1044 100%);
+  color: #fff;
+  padding: 56px 40px 48px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.midterm-hero::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -60px;
+  width: 280px; height: 280px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 50%;
+}
+.midterm-hero h1 { font-size: clamp(1.8rem, 4.5vw, 2.6rem); font-weight: 900; margin-bottom: 12px; line-height: 1.15; }
+.midterm-hero .subtitle { font-size: 1.02rem; opacity: 0.88; max-width: 760px; margin-bottom: 20px; }
+.midterm-hero .hero-meta { display: flex; gap: 10px; flex-wrap: wrap; }
+.urgent-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(210,40,40,0.85);
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 5px 16px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.rubric-bar { height: 8px; border-radius: 20px; background: var(--border); overflow: hidden; min-width: 90px; }
+.rubric-fill { height: 100%; border-radius: 20px; background: linear-gradient(90deg, var(--navy), var(--crimson)); }
+.checklist-item {
+  display: flex;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: flex-start;
+}
+.checklist-item:last-child { border-bottom: none; }
+.check-box {
+  width: 20px; height: 20px;
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.checklist-text { font-size: 0.92rem; }
+.trap {
+  background: rgba(139,26,26,0.06);
+  border-left: 3px solid var(--crimson);
+  border-radius: 0 6px 6px 0;
+  padding: 8px 14px;
+  font-size: 0.88rem;
+  margin: 6px 0;
+}
+.trap::before { content: '⚠️ '; }
+@media (max-width: 768px) {
+  .midterm-hero { padding: 36px 22px 30px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="header-brand">
+      <span class="header-logo">SM</span>
+      <span class="header-title">Study Book</span>
+    </a>
+    <nav class="header-nav">
+      <a href="index.html" class="nav-btn home-btn">⌂ Course Map</a>
+      <a href="https://pixelcraft-creator.github.io/mba-study-library/" class="nav-btn">🏛 MBA Library</a>
+      <button onclick="toggleTheme()" class="nav-btn">◑ Theme</button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrap">
+
+  <!-- HERO -->
+  <div class="midterm-hero">
+    <div class="urgent-badge">⚡ Mid-Term Group Project</div>
+    <h1>Mid-Term Project Hub</h1>
+    <div class="subtitle">Strategic Analysis for a Selected Firm · A structured guide to the brief. It explains what is asked, how it is graded, which module covers each part, and the mistakes the lectures warn about. It does <strong>not</strong> analyse a firm for you — that analysis is the assignment.</div>
+    <div class="hero-meta">
+      <span class="hero-badge">📖 Dr. Raghda Fawzy</span>
+      <span class="hero-badge">⏱ 30 points of the course grade</span>
+      <span class="hero-badge">🎤 Presentation: Lecture 5 · 14 Oct 2026</span>
+    </div>
+  </div>
+
+  <!-- TOC -->
+  <div class="toc-box">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#overview">Project Overview</a></li>
+      <li><a href="#rubric">Grading Rubric</a></li>
+      <li><a href="#deliverables">The Six Deliverables</a></li>
+      <li><a href="#a-background">A &amp; B — Background, Vision &amp; Mission</a></li>
+      <li><a href="#c-external">C — PESTEL &amp; Five Forces</a></li>
+      <li><a href="#d-efe">D — EFE Matrix</a></li>
+      <li><a href="#e-cpm">E — Competitive Profile Matrix</a></li>
+      <li><a href="#presentation">Presentation Requirements</a></li>
+      <li><a href="#crossref">Study Book Cross-Reference</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#checklist">Before You Submit</a></li>
+    </ol>
+  </div>
+
+  <!-- OVERVIEW -->
+  <h2 id="overview" class="section-title">Project Overview</h2>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">📋</span> Assessment Details</div>
+    <div class="grid-2">
+      <div>
+        <div style="margin-bottom:16px;">
+          <div class="section-label">Objective</div>
+          <p>Hands-on experience applying strategic management frameworks and tools to a real-world firm, building critical thinking, collaboration, and practical understanding of strategic decision-making.</p>
+        </div>
+        <div style="margin-bottom:16px;">
+          <div class="section-label">Scope</div>
+          <p>Focus your analysis on <strong>one country</strong>, not a region or a global presence.</p>
+        </div>
+        <div>
+          <div class="section-label">Weight</div>
+          <p style="font-size:2rem; font-weight:800; color:var(--crimson); line-height:1;">30 points</p>
+          <p style="font-size:0.85rem; color:var(--text-muted);">Midterm Project &amp; Presentation (Assessment 3 of 4 in the syllabus).</p>
+        </div>
+      </div>
+      <div>
+        <div style="margin-bottom:16px;">
+          <div class="section-label">Group &amp; Firm</div>
+          <ul class="check-list" style="margin-top:6px;">
+            <li>The brief says "Form 5 groups"; each group researches one firm of its choice</li>
+            <li>The firm <strong>must be approved by the professor</strong> to ensure diversity of industries and relevance to the course</li>
+          </ul>
+        </div>
+        <div>
+          <div class="section-label">Submission</div>
+          <p>Submit your presentation slides to your <strong>group coordinator</strong>, who compiles them and sends them to the professor <strong>the night before the mid-term class</strong>. No PDF files are accepted.</p>
+        </div>
+      </div>
+    </div>
+    <div class="key-point" style="margin-top:16px;"><strong>Integrity and AI:</strong> cite all sources in the presentation <em>and</em> include a proper list of <strong>all</strong> references. Plagiarism and use of AI are subject to university rules. AI may be used to support research, but must not replace critical thinking, analysis, or intellectual judgment; students remain fully responsible for quality, accuracy, integrity, and outcomes.</div>
+    <div class="insight-box" style="margin-top:14px;">
+      <div class="insight-title">An ambiguity in the brief</div>
+      <p>"Form 5 groups" could mean five groups in the class or groups of five students. The brief does not say which. Confirm with your group coordinator before assuming a team size.</p>
+    </div>
+  </div>
+
+  <!-- RUBRIC -->
+  <h2 id="rubric" class="section-title">Grading Rubric</h2>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">⚖️</span> Where the Marks Are</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Component</th><th>Weight</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>Organization background and critique of Vision and Mission</td><td><strong>5%</strong></td><td><div class="rubric-bar"><div class="rubric-fill" style="width:20%"></div></div></td></tr>
+          <tr><td>PESTEL analysis</td><td><strong>10%</strong></td><td><div class="rubric-bar"><div class="rubric-fill" style="width:40%"></div></div></td></tr>
+          <tr><td>Porter's Five Forces analysis</td><td><strong>25%</strong></td><td><div class="rubric-bar"><div class="rubric-fill" style="width:100%"></div></div></td></tr>
+          <tr><td>EFE matrix</td><td><strong>25%</strong></td><td><div class="rubric-bar"><div class="rubric-fill" style="width:100%"></div></div></td></tr>
+          <tr><td>Competitive Profile Matrix</td><td><strong>25%</strong></td><td><div class="rubric-bar"><div class="rubric-fill" style="width:100%"></div></div></td></tr>
+          <tr><td>Presentation and delivery</td><td><strong>10%</strong></td><td><div class="rubric-bar"><div class="rubric-fill" style="width:40%"></div></div></td></tr>
+          <tr><td><strong>Total</strong></td><td><strong>100%</strong></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="key-point" style="margin-top:14px;"><strong>Reading the weights:</strong> the three analytic tools (Five Forces, EFE, CPM) carry <strong>75%</strong> of the project grade; vision and mission plus background are only 5%. Spend your preparation time accordingly — and note the brief limits the background to 1.5 minutes.</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">📝</span> The Evaluation Criteria in the Brief</div>
+    <ul class="check-list">
+      <li>Depth of research and quality of analysis</li>
+      <li>Demonstrating references</li>
+      <li>Application of strategic management frameworks</li>
+      <li><strong>AQCD</strong> — factors that are Actionable, Quantitative, Comparative, and Divisional (see <a href="m03-external-audit-pestel.html#aqcd">Module 3</a>)</li>
+      <li>Clarity, professionalism, and creativity of the presentation</li>
+      <li>Team collaboration and equal participation</li>
+      <li>Logic, applicability, and validity of information sources</li>
+    </ul>
+  </div>
+
+  <!-- DELIVERABLES -->
+  <h2 id="deliverables" class="section-title">The Six Deliverables</h2>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🗺️</span> What the Brief Asks For, in Order</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Part</th><th>Deliverable</th><th>What the brief says</th><th>Module</th></tr></thead>
+        <tbody>
+          <tr><td><strong>a</strong></td><td>Organization background</td><td>Brief history and overview; business, products or services, market presence. Very brief — <strong>not more than 1.5 minutes</strong></td><td>—</td></tr>
+          <tr><td><strong>b</strong></td><td>Critique of vision and mission</td><td>Present the firm's statements; critically analyze them using the study material; assess clarity and effectiveness in guiding decisions; <strong>revise as necessary</strong></td><td><a href="m02-vision-and-mission.html">M02</a></td></tr>
+          <tr><td><strong>c.1</strong></td><td>PESTEL analysis</td><td>Political, Economic, Social, Technological, Environmental, Legal factors impacting firms in your industry — <strong>one country</strong>; explain briefly how they influence strategic decisions and long-term sustainability</td><td><a href="m03-external-audit-pestel.html">M03</a></td></tr>
+          <tr><td><strong>c.2</strong></td><td>Porter's Five Forces</td><td>Evaluate the competitive pressures within the industry</td><td><a href="m04-five-forces-efe-cpm.html#five-forces">M04</a></td></tr>
+          <tr><td><strong>d</strong></td><td>EFE matrix</td><td>Evaluate opportunities and threats; highlight and comment on key factors and their impact on strategic position; brainstorm and prioritize factors with <strong>weights and ratings</strong></td><td><a href="m04-five-forces-efe-cpm.html#efe">M04</a></td></tr>
+          <tr><td><strong>e</strong></td><td>Competitive Profile Matrix</td><td>Compare the firm with <strong>at least two major competitors</strong>; research and use appropriate criteria; explain relative strengths and weaknesses; <strong>substantiate your ratings</strong></td><td><a href="m04-five-forces-efe-cpm.html#cpm">M04</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- A & B -->
+  <h2 id="a-background" class="section-title">A &amp; B — Background, Vision &amp; Mission</h2>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🧭</span> Method (from Module 2)</div>
+    <div class="process-flow">
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--navy);">1</div>
+        <div class="step-content">
+          <div class="step-title">Find the firm's own vision and mission</div>
+          <div class="step-desc">Quote them exactly and cite the source. If one of the two does not exist, say so — that is itself a finding.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--crimson);">2</div>
+        <div class="step-content">
+          <div class="step-title">Score the vision on the 5-out-of-5 test</div>
+          <div class="step-desc">Clear, futuristic, concise, unique, inspiring — a 1 or 0 for each with a written justification.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--gold);">3</div>
+        <div class="step-content">
+          <div class="step-title">Tag the mission with the nine components</div>
+          <div class="step-desc">Mark each phrase with its component number; list the missing ones.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--teal);">4</div>
+        <div class="step-content">
+          <div class="step-title">Revise and recount</div>
+          <div class="step-desc">Rewrite so every missing element is covered, and count the words (fewer than 100).</div>
+        </div>
+      </div>
+    </div>
+    <div class="trap">The mission must not contain numbers, percentages, ratios, or objectives, and should be inspiring and reconciliatory. A rewrite that adds components but pushes past 100 words fails the very test it is meant to pass.</div>
+    <div class="trap">The brief gives only 1.5 minutes for the background, but the vision/mission critique shares a 5% slice. Keep both tight; do not let them eat time from the 75% tools.</div>
+  </div>
+
+  <!-- C -->
+  <h2 id="c-external" class="section-title">C — PESTEL &amp; Five Forces</h2>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🌍</span> PESTEL (10%)</div>
+    <ul class="check-list">
+      <li>Pick <strong>one country</strong> and keep every factor in that country — the brief says a region is not acceptable</li>
+      <li>Cover all six forces; for each, choose factors that pass <strong>AQCD</strong> (numbers, change over time, specific to your products or regions, and actionable)</li>
+      <li>For each force, add the brief's required line: how it influences strategic decisions and long-term sustainability</li>
+      <li>Keep Political and Legal separate: the government's decision vs. the law that enforces it</li>
+    </ul>
+    <div class="trap">Vague factors ("disposable incomes increased greatly") fail AQCD. Use dated, quantified, comparative figures from cited sources.</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🕸️</span> Porter's Five Forces (25%)</div>
+    <ul class="check-list">
+      <li>Define the <strong>industry boundary</strong> explicitly — too broad or too narrow distorts every force</li>
+      <li>Cover all five forces, but <strong>identify which are most pressing</strong> in your industry rather than weighting all equally</li>
+      <li>For each force, use the lecture's conditions: for rivalry, the ten conditions of Table 3.5; for suppliers and consumers, the conditions that raise their power; for entrants, the barriers; for substitutes, falling prices and switching costs</li>
+      <li>End with AQCD opportunities and threats relevant to the firm's vision and mission — these feed the EFE matrix</li>
+    </ul>
+    <div class="trap">Do not label the industry "attractive" or "unattractive". The lecture says to use the model to formulate strategies more efficiently, not to pin labels.</div>
+    <div class="trap">At 25% this is as heavy as the EFE and CPM. A one-slide force-by-force list will not show "depth of research and quality of analysis".</div>
+  </div>
+
+  <!-- D -->
+  <h2 id="d-efe" class="section-title">D — EFE Matrix</h2>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🧮</span> EFE Matrix (25%)</div>
+    <div class="process-flow">
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--navy);">1</div>
+        <div class="step-content">
+          <div class="step-title">Brainstorm, then narrow</div>
+          <div class="step-desc">Build a long list from your PESTEL and Five Forces (the lecture suggests up to ~50 each of opportunities and threats), apply AQCD, then narrow to 10 opportunities and 10 threats. The brief asks the group to brainstorm and prioritize.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--crimson);">2</div>
+        <div class="step-content">
+          <div class="step-title">Weights summing to 1.0</div>
+          <div class="step-desc">Each factor 0.01–1.00 by relative importance for success in the industry. Opportunities and threats need not split the weight equally.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--gold);">3</div>
+        <div class="step-content">
+          <div class="step-title">Ratings 1–4 for the firm</div>
+          <div class="step-desc">How effectively <em>this firm's current strategies</em> respond. Ratings are company-based, not industry-based.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--teal);">4</div>
+        <div class="step-content">
+          <div class="step-title">Weighted scores, total, comment</div>
+          <div class="step-desc">Weight × rating; sum (range 1–4, average 2.5). The brief also asks you to highlight and comment on key factors and their impact on the firm's strategic position.</div>
+        </div>
+      </div>
+    </div>
+    <div class="trap">Do not list strategies as opportunities. "Build a factory" is a strategy; "demand is rising" is an opportunity.</div>
+    <div class="trap">Keep factors distinct — no repeated factor in two rows, and no duplicate of a PESTEL point reworded.</div>
+    <div class="trap">Check your arithmetic: weights must sum to exactly 1.00. Recompute every weighted score; the lecture's example total (2.58) was verified this way.</div>
+    <div class="insight-box" style="margin-top:14px;">
+      <div class="insight-title">Learn the format from the lecture example</div>
+      <p>The worked cinema-complex example in <a href="m04-five-forces-efe-cpm.html#efe-example">Module 4</a> shows the layout, the AQCD-style wording of factors, and how to read a total. Use it to learn the format only — your factors, weights, and ratings must come from your own firm's research.</p>
+    </div>
+  </div>
+
+  <!-- E -->
+  <h2 id="e-cpm" class="section-title">E — Competitive Profile Matrix</h2>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">📊</span> CPM (25%)</div>
+    <ul class="check-list">
+      <li>Compare your firm with <strong>at least two</strong> major competitors</li>
+      <li><strong>Tailor critical success factors to the industry</strong> — specific measurable ones (the lecture's airline example: on-time arrival, leg room, routes served), not "quality of service" or "financial condition". The lecture's template asks for 12 factors</li>
+      <li>Weights are <strong>industry-based</strong> and sum to 1.0</li>
+      <li>Ratings 1–4 (4 superior, 3 above average, 2 average, 1 poor), applied to <strong>each firm</strong> on each factor</li>
+      <li>Avoid giving the <strong>same rating to two or more firms</strong> on a factor — the matrix exists to differentiate</li>
+      <li><strong>Substantiate every rating</strong> with evidence (the brief's wording). Customer-based measures such as NPS can support ratings</li>
+    </ul>
+    <div class="trap">A CPM and an EFE are different tools: the EFE rates how well the firm handles external opportunities and threats; the CPM compares the firm with named competitors. Do not reuse EFE factors as CPM factors.</div>
+    <div class="trap">The lecture's Table 3.10 uses 8 factors "for simplicity" and notes that is too few. A matrix with only a handful of generic factors will look thin.</div>
+  </div>
+
+  <!-- PRESENTATION -->
+  <h2 id="presentation" class="section-title">Presentation Requirements</h2>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎤</span> Format and Rules</div>
+    <div class="grid-2">
+      <ul class="check-list">
+        <li>Maximum <strong>15 minutes</strong>, followed by <strong>5 minutes of Q&amp;A</strong></li>
+        <li>Use visual aids — PowerPoint, graphs, charts — to improve clarity and impact</li>
+        <li><strong>No PDF files accepted</strong></li>
+        <li>All group members must <strong>participate actively</strong></li>
+      </ul>
+      <ul class="check-list">
+        <li><strong>First page must contain</strong> the name, job title, place of work, and digital photo of every group member</li>
+        <li>Cite all sources on the slides <em>and</em> add a full reference list</li>
+        <li>Slides go to the group coordinator, who sends them the night before the mid-term class</li>
+      </ul>
+    </div>
+    <div class="card-title" style="margin-top:20px;"><span class="icon">⏱️</span> A Time Budget (my planning aid, not from the brief)</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Segment</th><th>Minutes</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Background (brief says ≤ 1.5)</td><td>1.5</td><td>Fixed by the brief</td></tr>
+          <tr><td>Vision &amp; mission critique</td><td>1.0</td><td>Shares the 5% slice</td></tr>
+          <tr><td>PESTEL</td><td>2.0</td><td>10% of marks</td></tr>
+          <tr><td>Five Forces</td><td>3.0</td><td>25% of marks</td></tr>
+          <tr><td>EFE matrix</td><td>3.0</td><td>25% of marks</td></tr>
+          <tr><td>CPM</td><td>3.0</td><td>25% of marks</td></tr>
+          <tr><td>Transitions and close</td><td>1.5</td><td>Delivery is 10% of marks</td></tr>
+          <tr><td><strong>Total</strong></td><td><strong>15.0</strong></td><td>Leaves the 5-minute Q&amp;A separate</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- CROSSREF -->
+  <h2 id="crossref" class="section-title">Study Book Cross-Reference</h2>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">📚</span> Which Module Covers Each Part</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Brief part</th><th>Read first</th><th>Section</th></tr></thead>
+        <tbody>
+          <tr><td>Vision &amp; mission critique</td><td><a href="m02-vision-and-mission.html">Module 2</a></td><td>5-out-of-5 test; nine components; worked rewrites</td></tr>
+          <tr><td>PESTEL</td><td><a href="m03-external-audit-pestel.html">Module 3</a></td><td>The six forces; AQCD; Political vs. Legal</td></tr>
+          <tr><td>Five Forces</td><td><a href="m04-five-forces-efe-cpm.html#five-forces">Module 4</a></td><td>Each force; Table 3.5; barriers; pitfalls</td></tr>
+          <tr><td>EFE matrix</td><td><a href="m04-five-forces-efe-cpm.html#efe">Module 4</a></td><td>Five steps; tips; cinema worked example</td></tr>
+          <tr><td>CPM</td><td><a href="m04-five-forces-efe-cpm.html#cpm">Module 4</a></td><td>Rules; Table 3.10; EFE vs. CPM</td></tr>
+          <tr><td>Where it sits in the whole process</td><td><a href="m01-nature-of-strategic-management.html">Module 1</a></td><td>The strategic-management model</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- TIMELINE -->
+  <h2 id="timeline" class="section-title">Timeline</h2>
+
+  <div class="card">
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-date">23 Sep 2026 · Lecture 2</div><div class="timeline-title">Assignment brief issued</div></div>
+      <div class="timeline-item"><div class="timeline-date">30 Sep 2026 · Lecture 3</div><div class="timeline-title">Mid-Term brief issued · Individual assignment due (per the schedule)</div></div>
+      <div class="timeline-item"><div class="timeline-date">7 Oct 2026 · Lecture 4</div><div class="timeline-title">Five Forces, EFE, CPM taught; Mid-Term brief revisited</div></div>
+      <div class="timeline-item"><div class="timeline-date" style="color:var(--crimson); font-weight:700;">13 Oct 2026 (night before)</div><div class="timeline-title">Coordinator sends compiled slides to the professor</div></div>
+      <div class="timeline-item"><div class="timeline-date" style="color:var(--crimson); font-weight:700;">14 Oct 2026 · Lecture 5</div><div class="timeline-title">🎤 Mid-Term group project presentations</div></div>
+    </div>
+    <div class="insight-box" style="margin-top:14px;">
+      <div class="insight-title">Source note</div>
+      <p>Dates come from the course schedule slide (Lecture 5, 14 Oct = "Mid-Term · Group Project Presentation"). The "night before" date is my inference from the brief's wording. The schedule also lists the individual assignment as due at Lecture 3, while its own brief says by class #4 — confirm which applies.</p>
+    </div>
+  </div>
+
+  <!-- CHECKLIST -->
+  <h2 id="checklist" class="section-title">Before You Submit</h2>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">✅</span> Pre-Submission Checklist</div>
+    <div class="checklist-item"><div class="check-box"></div><div class="checklist-text">Firm approved by the professor; <strong>one country</strong> throughout, no regional or global analysis</div></div>
+    <div class="checklist-item"><div class="check-box"></div><div class="checklist-text">First slide has name, job title, place of work, and photo for <strong>every</strong> member</div></div>
+    <div class="checklist-item"><div class="check-box"></div><div class="checklist-text">Background ≤ 1.5 minutes; vision and mission quoted, critiqued with the tests, and revised</div></div>
+    <div class="checklist-item"><div class="check-box"></div><div class="checklist-text">Rewritten mission has all nine components and is under 100 words (recount it)</div></div>
+    <div class="checklist-item"><div class="check-box"></div><div class="checklist-text">PESTEL covers all six forces; factors pass AQCD; each force has its strategic-influence line</div></div>
+    <div class="checklist-item"><div class="check-box"></div><div class="checklist-text">Five Forces: industry defined, most pressing forces identified, no "attractive/unattractive" label</div></div>
+    <div class="checklist-item"><div class="check-box"></div><div class="checklist-text">EFE: 10 O + 10 T, no strategies listed as opportunities, weights sum to 1.00, every product recomputed, total interpreted against the 2.5 average</div></div>
+    <div class="checklist-item"><div class="check-box"></div><div class="checklist-text">CPM: at least two competitors, industry-tailored factors, weights sum to 1.0, no tied ratings, every rating substantiated</div></div>
+    <div class="checklist-item"><div class="check-box"></div><div class="checklist-text">Every source cited on the slide <strong>and</strong> a full reference list included</div></div>
+    <div class="checklist-item"><div class="check-box"></div><div class="checklist-text">File is PowerPoint (not PDF); fits 15 minutes; every member has a speaking role</div></div>
+    <div class="checklist-item"><div class="check-box"></div><div class="checklist-text">AI used only to support research — the analysis and judgment are the group's own</div></div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="module-nav">
+    <a href="m04-five-forces-efe-cpm.html" class="nav-link">
+      <span class="arrow">‹</span>
+      <span>
+        <span class="nav-label">Previous Module</span>
+        <span class="nav-title">M04: Five Forces, EFE &amp; CPM</span>
+      </span>
+    </a>
+    <a href="index.html" class="nav-link next">
+      <span class="arrow">›</span>
+      <span>
+        <span class="nav-label">Return to</span>
+        <span class="nav-title">Course Map</span>
+      </span>
+    </a>
+  </nav>
+
+</div>
+
+<script>
+function toggleTheme() {
+  const root = document.documentElement;
+  root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  localStorage.setItem('sm-theme', root.getAttribute('data-theme'));
+}
+(function() {
+  const saved = localStorage.getItem('sm-theme');
+  if (saved) document.documentElement.setAttribute('data-theme', saved);
+})();
+</script>
+</body>
+</html>

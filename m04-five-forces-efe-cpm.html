@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M04: Five Forces, EFE &amp; CPM — Strategic Management Study Book</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="header-brand">
+      <span class="header-logo">SM</span>
+      <span class="header-title">Study Book</span>
+    </a>
+    <nav class="header-nav">
+      <a href="index.html" class="nav-btn home-btn">⌂ Course Map</a>
+      <a href="https://pixelcraft-creator.github.io/mba-study-library/" class="nav-btn">🏛 MBA Library</a>
+      <button onclick="toggleTheme()" class="nav-btn">◑ Theme</button>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrap">
+
+  <!-- HERO -->
+  <div class="module-hero">
+    <div class="hero-tag">Module 04 · Lecture 4</div>
+    <h1>Five Forces, EFE &amp; CPM</h1>
+    <div class="subtitle">Porter's Five Forces, competitive intelligence, and the two matrices that turn external analysis into numbers — the External Factor Evaluation (EFE) matrix and the Competitive Profile Matrix (CPM). Together they are 75% of the mid-term project grade.</div>
+    <div class="hero-meta">
+      <span class="hero-badge">📖 Dr. Raghda Fawzy</span>
+      <span class="hero-badge">⏱ Lecture 4 · 7 Oct 2026</span>
+      <span class="hero-badge">📚 David, Strategic Management, 18th Ed., Ch. 3 (cont.)</span>
+    </div>
+  </div>
+
+  <!-- TOC -->
+  <div class="toc-box">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#objectives">What This Lecture Covers</a></li>
+      <li><a href="#bridge">Where This Fits</a></li>
+      <li><a href="#competitors">Knowing Your Competitors</a></li>
+      <li><a href="#ci">Competitive Intelligence</a></li>
+      <li><a href="#five-forces">Porter's Five Forces</a></li>
+      <li><a href="#pitfalls">Five-Forces Pitfalls</a></li>
+      <li><a href="#sources">Where to Find Information</a></li>
+      <li><a href="#efe">The EFE Matrix</a></li>
+      <li><a href="#efe-example">Worked Example: Cinema Complex EFE</a></li>
+      <li><a href="#cpm">The Competitive Profile Matrix</a></li>
+      <li><a href="#nps">Net Promoter Score</a></li>
+      <li><a href="#midterm">The Mid-Term Link</a></li>
+      <li><a href="#exam">Exam Preparation</a></li>
+      <li><a href="#recall">Active Recall</a></li>
+      <li><a href="#glossary">Glossary</a></li>
+    </ol>
+  </div>
+
+  <!-- OBJECTIVES -->
+  <div id="objectives" class="card">
+    <div class="card-title"><span class="icon">🎯</span> What This Lecture Covers</div>
+    <ul class="check-list">
+      <li>Identify rival firms and the ten key questions to ask about competitors</li>
+      <li>Explain competitive intelligence and legal, ethical ways to gather it</li>
+      <li>Analyze an industry with Porter's Five Forces and judge the conditions that raise each force</li>
+      <li>List barriers to entry and the pitfalls to avoid in a Five-Forces analysis</li>
+      <li>Build an EFE matrix: choose factors, assign weights and ratings, compute the weighted total</li>
+      <li>Build a Competitive Profile Matrix that compares a firm with its competitors</li>
+      <li>Calculate a Net Promoter Score</li>
+    </ul>
+    <div class="insight-box" style="margin-top:16px;">
+      <div class="insight-title">Source note</div>
+      <p>The Lecture 4 PDF is titled "Chapter 3" in its metadata, but it covers the second half of the Chapter 3 material (competitors, Five Forces, EFE, CPM). The slides reference a few regional examples (Aramco, Almarai, Edita, Cleopatra Hospitals) alongside the textbook's; both are included below and labelled.</p>
+    </div>
+  </div>
+
+  <!-- BRIDGE -->
+  <h2 id="bridge" class="section-title">Where This Fits</h2>
+
+  <div class="card">
+    <p><a href="m03-external-audit-pestel.html">Module 3</a> introduced the external audit and its two lenses: PESTEL (the broad outer ring) and Porter's Five Forces (the inner ring of industry stakeholders). This module develops the inner ring, then shows how both lenses are summarised into a single scored table — the <strong>EFE matrix</strong> — and how the firm is benchmarked against rivals in the <strong>CPM</strong>.</p>
+    <div class="key-point" style="margin-top:14px;">Flow of the mid-term analysis: <strong>PESTEL → Five Forces → EFE matrix → CPM</strong>. Each step feeds the next, and the EFE matrix is where the PESTEL and Five-Forces factors are finally weighted and rated.</div>
+  </div>
+
+  <!-- COMPETITORS -->
+  <h2 id="competitors" class="section-title">Knowing Your Competitors</h2>
+
+  <div class="card">
+    <p>An important part of an external audit is identifying rival firms and determining their <strong>strengths, weaknesses, capabilities, opportunities, threats, objectives, and strategies</strong>. The lecture opens with a warning (George Salk): "If you're not faster than your competitor, you're in a tenuous [weak] position, and if you're only half as fast, you're terminal."</p>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">❓</span> Ten Key Questions About Competitors</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Question</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>What are the strengths and weaknesses of our major competitors?</td></tr>
+          <tr><td>2</td><td>What products and services do we offer that are unique in the industry?</td></tr>
+          <tr><td>3</td><td>What are the objectives and strategies of our major competitors?</td></tr>
+          <tr><td>4</td><td>How will our major competitors most likely respond to current political, economic, sociocultural, technological, environmental, and legal trends affecting our industry?</td></tr>
+          <tr><td>5</td><td>How vulnerable are our major competitors to our new strategies, products, and services?</td></tr>
+          <tr><td>6</td><td>How vulnerable is our firm to successful counterattack by our major competitors?</td></tr>
+          <tr><td>7</td><td>How does our firm compare to rivals in mastering the social media conversation in this industry?</td></tr>
+          <tr><td>8</td><td>To what extent are new firms entering and old firms leaving this industry?</td></tr>
+          <tr><td>9</td><td>What key factors have resulted in our present competitive position in this industry?</td></tr>
+          <tr><td>10</td><td>How are supplier and distributor relationships changing in this industry?</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- CI -->
+  <h2 id="ci" class="section-title">Competitive Intelligence</h2>
+
+  <div class="def-box">
+    <div class="def-term">Competitive intelligence (CI)</div>
+    <div class="def-text">A <strong>systematic and ethical</strong> process for gathering and analyzing information about the competition's activities and general business trends to further a business's own goals. Quality CI, in business as in the military, is one of the keys to success.</div>
+  </div>
+
+  <div class="key-point" style="margin-top:16px;"><strong>Turn rivals' profiles into factors:</strong> major competitors' <em>weaknesses</em> can represent external <em>opportunities</em>; major competitors' <em>strengths</em> may represent key <em>threats</em>.</div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-title"><span class="icon">🔎</span> Legal and Ethical Ways to Obtain CI</div>
+    <div class="grid-2">
+      <ul class="check-list">
+        <li>Reverse-engineer rival firms' products</li>
+        <li>Surveys and interviews of customers, suppliers, and distributors of rival firms</li>
+        <li>Analyze a rival's Form 10-K (US)</li>
+        <li>Fly-over and drive-by visits to rival operations</li>
+        <li>Search online databases</li>
+      </ul>
+      <ul class="check-list">
+        <li>Contact government agencies for public information about rivals</li>
+        <li>Monitor trade publications, magazines, and newspapers</li>
+        <li>Purchase social-media data about customers of all firms in the industry</li>
+        <li>Hire top executives from rival firms</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FIVE FORCES -->
+  <h2 id="five-forces" class="section-title">Porter's Five Forces</h2>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🕸️</span> The Model (Figure 3.3)</div>
+    <p style="margin-bottom:12px;">Rivalry among competing firms sits at the centre of the diagram, with the other four forces around it: <strong>bargaining power of suppliers</strong> (above), <strong>bargaining power of consumers</strong> (below), <strong>potential entry of new competitors</strong> (left), and <strong>potential development of substitute products</strong> (right).</p>
+    <div class="key-point"><strong>Porter (2008), quoted on the slide:</strong> the five forces govern the profit structure of an industry by determining how the economic value it creates is apportioned. Value can be drained by rivalry among existing competitors, bargained away through the power of suppliers or customers, or constrained by the threat of new entrants or substitutes. Strategy can be viewed as building defenses against the competitive forces or as finding a position in an industry where the forces are weaker.</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">⚔️</span> 1 · Rivalry Among Competing Firms</div>
+    <p style="margin-bottom:10px;">The <strong>most powerful</strong> of the five forces. It focuses on the competitive advantage of strategies over other firms. Intense rivalry can <strong>decrease overall industry profits</strong>, because firms often lower prices or spend extra on advertising to hold market share — often transferring profits directly to consumers and other players in the model.</p>
+    <p style="font-size:0.87rem; color:var(--text-muted); margin-bottom:12px;"><em>Regional examples on the slide:</em> telecom, real estate, banking, FMCG, hospitality, ride-hailing services.</p>
+    <div class="card-title" style="font-size:0.95rem;">Conditions That Cause High Rivalry (Table 3.5)</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Rivalry is high when…</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>the number of competing firms is high</td></tr>
+          <tr><td>2</td><td>competing firms are of similar size</td></tr>
+          <tr><td>3</td><td>competing firms have similar capabilities</td></tr>
+          <tr><td>4</td><td>demand for the industry's products is changing rapidly</td></tr>
+          <tr><td>5</td><td>price cuts are common in the industry</td></tr>
+          <tr><td>6</td><td>consumers can switch brands easily</td></tr>
+          <tr><td>7</td><td>barriers to leaving the market are high</td></tr>
+          <tr><td>8</td><td>barriers to entering the market are low</td></tr>
+          <tr><td>9</td><td>fixed costs are high among competing firms</td></tr>
+          <tr><td>10</td><td>products are perishable or have short product life cycles</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🏭</span> 2 · Bargaining Power of Suppliers</div>
+    <p style="margin-bottom:10px;">Supplier power is <strong>increased</strong> when there are:</p>
+    <ul class="check-list">
+      <li>Few suppliers</li>
+      <li>Few substitutes</li>
+      <li>High costs of switching raw materials</li>
+    </ul>
+    <p style="font-size:0.87rem; color:var(--text-muted); margin-top:12px;"><em>Examples on the slide:</em> oil and gas (Aramco, Schlumberger drilling equipment); pharma (ingredients and APIs); construction (steel, cement); aerospace and defense (high reliance on few suppliers).</p>
+    <div class="def-box" style="margin-top:14px;">
+      <div class="def-term">Backward integration</div>
+      <div class="def-text">Gaining control or ownership of suppliers — a firm's response to strong supplier power.</div>
+    </div>
+    <div class="grid-2" style="margin-top:14px;">
+      <div class="compare-card blue-accent">
+        <h4>Saudi Aramco</h4>
+        <p style="font-size:0.87rem; color:var(--text-muted);">Invested heavily in its own refining and petrochemical facilities, such as SABIC (Saudi Basic Industries Corporation), which it acquired in 2020. Producing its own petrochemical feedstocks and refining its own crude reduces reliance on third-party processors. <strong>Reason:</strong> to mitigate dependency on international refining and chemical processing partners.</p>
+      </div>
+      <div class="compare-card gold-accent">
+        <h4>Almarai</h4>
+        <p style="font-size:0.87rem; color:var(--text-muted);">Invested in owning and operating its own dairy farms, feed production facilities, and grain farming operations abroad (e.g., in Argentina and the USA). <strong>Reason:</strong> to reduce dependence on external feed suppliers and manage costs in dairy production.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🛒</span> 3 · Bargaining Power of Consumers</div>
+    <p style="margin-bottom:10px;">Consumers gain bargaining power:</p>
+    <ul class="check-list">
+      <li>If they can inexpensively switch to competing brands or substitutes</li>
+      <li>If they are particularly important to the seller</li>
+      <li>If sellers are struggling in the face of falling consumer demand</li>
+      <li>If they are informed about sellers' products, prices, and costs</li>
+      <li>If they have discretion in whether and when they purchase the product</li>
+    </ul>
+    <p style="font-size:0.87rem; color:var(--text-muted); margin-top:12px;"><em>Slide prompt:</em> retail or ride-hailing services (consumer power high) versus utilities, education, pharma (lower) — the slide poses this as a question to discuss, not as a settled answer.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🚪</span> 4 · Potential Entry of New Competitors</div>
+    <p style="margin-bottom:10px;">Barriers to entry are important, though quality, pricing, and marketing can overcome them.</p>
+    <p style="font-size:0.87rem; color:var(--text-muted); margin-bottom:12px;"><em>Examples on the slide:</em> low barriers — e-commerce and online retail (Amazon, Noon, Jumia), restaurants and cloud kitchens, digital wallets, lending platforms. Low potential — oil and gas, aviation, steel manufacturing.</p>
+    <div class="key-point" style="margin-bottom:14px;"><strong>Deterring entrants by consolidating:</strong> Amazon acquired Whole Foods and Zappos while investing heavily in logistics and delivery infrastructure; Cleopatra Hospitals acquired hospitals (Elsherouk, Nile Badrawy); Edita acquired smaller brands and partnered on others (Hohos, Hostess).</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th colspan="2">Barriers to Entry</th></tr></thead>
+        <tbody>
+          <tr><td>Need to gain economies of scale quickly</td><td>Government regulatory policies</td></tr>
+          <tr><td>Need to gain technology and specialized know-how</td><td>Tariffs</td></tr>
+          <tr><td>Lack of experience</td><td>Lack of access to raw materials</td></tr>
+          <tr><td>Strong customer loyalty</td><td>Possession of patents</td></tr>
+          <tr><td>Strong brand preferences</td><td>Undesirable locations</td></tr>
+          <tr><td>Large capital requirements</td><td>Counterattack by entrenched firms</td></tr>
+          <tr><td>Lack of adequate distribution channels</td><td>Potential saturation of the market</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🔄</span> 5 · Potential Development of Substitute Products</div>
+    <p style="margin-bottom:10px;">Competitive pressure from substitutes <strong>increases when</strong> the prices of substitutes decrease and when consumers' switching costs decrease.</p>
+    <p style="font-size:0.87rem; color:var(--text-muted);"><em>Examples on the slide:</em> government moving to solar versus oil; airplane versus other transport; cooking versus food ordering (meal kits); public transport versus ride-hailing; traditional banking versus fintech; calls versus VoIP and messaging. Industries named as exposed: oil, utilities, healthcare, aviation, construction materials, and tourist and pilgrimage sites.</p>
+  </div>
+
+  <!-- PITFALLS -->
+  <h2 id="pitfalls" class="section-title">Five-Forces Pitfalls</h2>
+
+  <div class="card">
+    <div class="process-flow">
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--navy);">1</div>
+        <div class="step-content">
+          <div class="step-title">Equal weight on all five forces</div>
+          <div class="step-desc">Instead, identify the most pressing forces for <em>your</em> industry.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--crimson);">2</div>
+        <div class="step-content">
+          <div class="step-title">Defining the industry too broad or too narrow</div>
+          <div class="step-desc">The boundary you draw changes every force.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--gold);">3</div>
+        <div class="step-content">
+          <div class="step-title">Labelling the industry "attractive" or "unattractive"</div>
+          <div class="step-desc">Use the model to formulate strategies more efficiently, not to pin labels on an industry.</div>
+        </div>
+      </div>
+    </div>
+    <div class="key-point" style="margin-top:14px;">When using the model, strive to identify <strong>AQCD opportunities and threats</strong> that are most important for success in the industry and most relevant to the firm's vision and mission.</div>
+  </div>
+
+  <!-- SOURCES -->
+  <h2 id="sources" class="section-title">Where to Find Information</h2>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🌐</span> Sources Named in the Lecture</div>
+    <div class="grid-2">
+      <div>
+        <p style="font-size:0.87rem; font-weight:700; margin-bottom:6px;">The textbook authors' seven sites</p>
+        <ul class="bullet-list" style="font-size:0.87rem; color:var(--text-muted);">
+          <li>finance.yahoo.com</li><li>hoovers.com</li><li>morningstar.com</li><li>mergentonline.com</li><li>globaledge.msu.edu/industries</li><li>Corporate websites of companies</li><li>comparably.com</li>
+        </ul>
+      </div>
+      <div>
+        <p style="font-size:0.87rem; font-weight:700; margin-bottom:6px;">Added by the instructor (regional focus)</p>
+        <ul class="bullet-list" style="font-size:0.87rem; color:var(--text-muted);">
+          <li>Free: CIA World Factbook, World Bank, Central Bank of Egypt, CAPMAS, Doing Business archive, Trading Economics, IMF country page, Google Trends</li>
+          <li>Freemium: Statista; BTI (Bertelsmann Transformation Index, moderately priced)</li>
+          <li>Premium and expensive: S&amp;P BMI, BMI/Fitch country risk, Euromonitor (industry-specific)</li>
+          <li>Monitoring tools: Google Alerts (keywords or names); Feedly RSS (watch a website for changes)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="insight-box" style="margin-top:16px;">
+      <div class="insight-title">For the Mid-Term</div>
+      <p>The brief requires you to <strong>cite every source and include a full reference list</strong>, and to show logic, applicability, and validity of your information sources. Prefer the free sources above for macro (PESTEL) data and company filings or the firm's own site for competitor data.</p>
+    </div>
+  </div>
+
+  <!-- EFE -->
+  <h2 id="efe" class="section-title">The EFE Matrix</h2>
+
+  <div class="def-box">
+    <div class="def-term">External Factor Evaluation (EFE) Matrix</div>
+    <div class="def-text">A widely used strategic-planning analytical tool designed to <strong>summarize and evaluate</strong> economic, social, cultural, demographic, environmental, political, governmental, legal, technological, and competitive information. It gives an <strong>empirical assessment of how well a firm is handling external factors overall</strong>, including its effectiveness at capitalizing on opportunities and minimizing threats.</div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-title"><span class="icon">🧮</span> The Five Steps</div>
+    <div class="process-flow">
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--navy);">1</div>
+        <div class="step-content">
+          <div class="step-title">List key external factors</div>
+          <div class="step-desc">Develop and narrow to 20 — 10 opportunities (O) and 10 threats (T).</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--crimson);">2</div>
+        <div class="step-content">
+          <div class="step-title">Assign each factor a weight</div>
+          <div class="step-desc">From 0.0 (not important) to 1.0 (very important); weights sum to 1.0.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--gold);">3</div>
+        <div class="step-content">
+          <div class="step-title">Rate how effectively current strategies respond</div>
+          <div class="step-desc">Scale of 1 to 4.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--teal);">4</div>
+        <div class="step-content">
+          <div class="step-title">Multiply weight × rating</div>
+          <div class="step-desc">This gives the weighted score for each factor.</div>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num" style="background:var(--navy-light);">5</div>
+        <div class="step-content">
+          <div class="step-title">Sum the weighted scores</div>
+          <div class="step-desc">The total weighted score measures overall effectiveness.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">💡</span> Tips From the Lecture</div>
+    <div class="grid-2">
+      <div class="compare-card blue-accent">
+        <h4>Building the factor list</h4>
+        <ul class="bullet-list" style="font-size:0.87rem; color:var(--text-muted);">
+          <li>Brainstorm (the lecture suggests the Delphi method)</li>
+          <li>Compile two data sets, opportunities and threats — perhaps <strong>50 each</strong> at first, applying AQCD as far as possible</li>
+          <li>Include factors most important to the industry given the firm's vision, mission, and strategies; consider PESTEL and the Five Forces</li>
+          <li>Narrow to 20 (10 O first, then 10 T); rank with Delphi if you like</li>
+          <li><strong>Do not include strategies as opportunities</strong> — building a factory is a strategy; an increase in demand is an opportunity</li>
+          <li>Make sure factors are distinct, not repeated</li>
+        </ul>
+      </div>
+      <div class="compare-card red-accent">
+        <h4>Weights, ratings, and the total</h4>
+        <ul class="bullet-list" style="font-size:0.87rem; color:var(--text-muted);">
+          <li><strong>Weights</strong> range from 0.01 to 1.00 and show relative importance for success in the industry (0.03 is three times 0.01). O and T need not split weights equally</li>
+          <li><strong>Ratings</strong> (4 to 1) reflect how effectively the <em>firm's strategies</em> capitalize on an opportunity or avoid and mitigate a threat. Ratings are <strong>company-based, not industry-based</strong></li>
+          <li>Total weighted score runs from <strong>lowest 1 to highest 4; average 2.5</strong></li>
+          <li>A total of 3.5, for example, means the firm's strategies effectively take advantage of opportunities and minimize the adverse effects of threats</li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size:0.87rem; color:var(--text-muted); margin-top:12px;">The slides head both tips with a quotation: "In God we trust. Everyone else brings data" (attributed to W. E. Deming) — the reason AQCD factors, with numbers, are preferred.</p>
+  </div>
+
+  <!-- EFE EXAMPLE -->
+  <h2 id="efe-example" class="section-title">Worked Example: Cinema Complex EFE</h2>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🎬</span> Table 3.8 — EFE Matrix for a Local 10-Theater Cinema Complex</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Key external factors</th><th>Weight</th><th>Rating</th><th>Weighted score</th></tr></thead>
+        <tbody>
+          <tr><td colspan="4"><strong>Opportunities</strong></td></tr>
+          <tr><td>1. Two new neighborhoods developing within 3 miles</td><td>0.09</td><td>1</td><td>0.09</td></tr>
+          <tr><td>2. TDB University is expanding 6 percent annually</td><td>0.08</td><td>4</td><td>0.32</td></tr>
+          <tr><td>3. Major competitor across town recently closed</td><td>0.08</td><td>3</td><td>0.24</td></tr>
+          <tr><td>4. Demand for business to cinemas growing 10 percent</td><td>0.07</td><td>2</td><td>0.14</td></tr>
+          <tr><td>5. Disposable income among citizens up 5 percent in prior year</td><td>0.06</td><td>3</td><td>0.18</td></tr>
+          <tr><td>6. Rowan County is growing 8 percent annually in population</td><td>0.05</td><td>3</td><td>0.15</td></tr>
+          <tr><td>7. Unemployment rate in county declined to 3.1 percent</td><td>0.03</td><td>2</td><td>0.06</td></tr>
+          <tr><td colspan="4"><strong>Threats</strong></td></tr>
+          <tr><td>1. Trend toward healthy eating eroding concession sales</td><td>0.12</td><td>4</td><td>0.48</td></tr>
+          <tr><td>2. County and city property taxes increasing 25 percent</td><td>0.08</td><td>2</td><td>0.16</td></tr>
+          <tr><td>3. Movies rented at local Redboxes up 12 percent</td><td>0.08</td><td>2</td><td>0.16</td></tr>
+          <tr><td>4. Demand for online movies growing 10 percent</td><td>0.06</td><td>2</td><td>0.12</td></tr>
+          <tr><td>5. Commercial property adjacent to cinemas for sale</td><td>0.06</td><td>3</td><td>0.18</td></tr>
+          <tr><td>6. Movies rented last quarter from Time Warner up 15 percent</td><td>0.06</td><td>1</td><td>0.06</td></tr>
+          <tr><td>7. Local religious groups object to R-rated movies</td><td>0.04</td><td>3</td><td>0.12</td></tr>
+          <tr><td>8. TDB University installing an on-campus movie theater</td><td>0.04</td><td>3</td><td>0.12</td></tr>
+          <tr><td><strong>Total</strong></td><td><strong>1.00</strong></td><td></td><td><strong>2.58</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">✅</span> Independent Check of the Arithmetic</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th></th><th>Sum of weights</th><th>Sum of weighted scores</th></tr></thead>
+        <tbody>
+          <tr><td>Opportunities (7 factors)</td><td>0.46</td><td>1.18</td></tr>
+          <tr><td>Threats (8 factors)</td><td>0.54</td><td>1.40</td></tr>
+          <tr><td><strong>Total</strong></td><td><strong>1.00</strong></td><td><strong>2.58</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="insight-box" style="margin-top:16px;">
+      <div class="insight-title">Reading the Result</div>
+      <p><strong>2.58 is just above the 2.5 average.</strong> The cinema's strategies are responding to its external environment slightly better than average, but not strongly. Look at <em>why</em>: its best-handled threat is the healthy-eating trend (weight 0.12, rating 4 → 0.48, the largest single score), while its worst-handled opportunity is the new neighborhoods (weight 0.09, rating only 1). The weights show where importance lies; the ratings show where the firm's strategies are actually working.</p>
+    </div>
+    <div class="insight-box" style="margin-top:14px;">
+      <div class="insight-title">Note: 15 factors, not 20</div>
+      <p>Step 1 asks for 10 opportunities and 10 threats. The textbook's own example has 7 opportunities and 8 threats. The tip slides say to narrow to 20; the textbook example is a smaller illustration. The slides do not say whether fewer factors are acceptable, so for the mid-term follow the 10 O + 10 T of the lecture unless the instructor tells you otherwise.</p>
+    </div>
+  </div>
+
+  <!-- CPM -->
+  <h2 id="cpm" class="section-title">The Competitive Profile Matrix</h2>
+
+  <div class="def-box">
+    <div class="def-term">Competitive Profile Matrix (CPM)</div>
+    <div class="def-text">A widely used strategic-planning analytical tool designed to identify a firm's major competitors and their particular strengths and weaknesses in relation to a sample firm's strategic position. It reveals how a firm <strong>compares with major competitors across a range of key factors</strong> and gives its competitive advantages or disadvantages in an industry.</div>
+  </div>
+
+  <div class="card" style="margin-top:20px;">
+    <div class="card-title"><span class="icon">📐</span> Rules for Building a CPM</div>
+    <ul class="check-list">
+      <li><strong>Tailor factors to the industry.</strong> In airlines, on-time arrival, leg room, and routes served are far better than vague factors like "quality of service" or "financial condition"</li>
+      <li><strong>Weights are industry-based</strong> and sum to 1.0</li>
+      <li><strong>Ratings</strong> quantify how well the firm and each competitor are doing on each critical success factor — 4 superior, 3 above average, 2 average, 1 poor</li>
+      <li><strong>Avoid giving the same rating to two or more firms</strong> on a factor, since the purpose is to differentiate between firms</li>
+      <li>The template asks for <strong>12 factors</strong>; the textbook example uses only 8 for simplicity and says that is really too few</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">📊</span> Table 3.10 — An Example Competitive Profile Matrix</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Critical success factor</th><th>Weight</th><th>Co. 1 rating</th><th>Co. 1 score</th><th>Co. 2 rating</th><th>Co. 2 score</th><th>Co. 3 rating</th><th>Co. 3 score</th></tr></thead>
+        <tbody>
+          <tr><td>Advertising</td><td>0.20</td><td>1</td><td>0.20</td><td>4</td><td>0.80</td><td>3</td><td>0.60</td></tr>
+          <tr><td>Global expansion</td><td>0.20</td><td>4</td><td>0.80</td><td>1</td><td>0.20</td><td>2</td><td>0.40</td></tr>
+          <tr><td>Financial position</td><td>0.15</td><td>4</td><td>0.60</td><td>2</td><td>0.30</td><td>3</td><td>0.45</td></tr>
+          <tr><td>Management</td><td>0.10</td><td>4</td><td>0.40</td><td>2</td><td>0.20</td><td>1</td><td>0.10</td></tr>
+          <tr><td>Product quality</td><td>0.10</td><td>4</td><td>0.40</td><td>3</td><td>0.30</td><td>2</td><td>0.20</td></tr>
+          <tr><td>Customer loyalty</td><td>0.10</td><td>4</td><td>0.40</td><td>3</td><td>0.30</td><td>2</td><td>0.20</td></tr>
+          <tr><td>Price competitiveness</td><td>0.10</td><td>3</td><td>0.30</td><td>2</td><td>0.20</td><td>1</td><td>0.10</td></tr>
+          <tr><td>Market share</td><td>0.05</td><td>1</td><td>0.05</td><td>4</td><td>0.20</td><td>3</td><td>0.15</td></tr>
+          <tr><td><strong>Total</strong></td><td><strong>1.00</strong></td><td></td><td><strong>3.15</strong></td><td></td><td><strong>2.50</strong></td><td></td><td><strong>2.20</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="insight-box" style="margin-top:16px;">
+      <div class="insight-title">Reading the Result (all totals recomputed and confirmed)</div>
+      <p><strong>Company 1 (3.15) leads, Company 2 (2.50) is middle, Company 3 (2.20) trails</strong> — the textbook note says Company 3's strategies are aligned relatively worse across the eight critical success factors. But the totals hide a story: Company 1 is poor on advertising and market share (rating 1 on each) yet wins overall on global expansion, financial position, management, quality, and loyalty. Company 2 is the reverse — superior on advertising and market share, weak on global expansion. In an answer, explain <em>which factors drive each total</em>, not just who ranks first.</p>
+    </div>
+    <div class="key-point" style="margin-top:14px;">The same-rating rule is met: on every row the three firms have <strong>three different ratings</strong>.</div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">🆚</span> EFE vs. CPM — Do Not Mix Them Up</div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th></th><th>EFE matrix</th><th>Competitive Profile Matrix</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Compares</strong></td><td>The firm against its external environment (opportunities and threats)</td><td>The firm against its major competitors</td></tr>
+          <tr><td><strong>Factors</strong></td><td>External opportunities and threats (10 O + 10 T)</td><td>Critical success factors (template asks for 12)</td></tr>
+          <tr><td><strong>Weights</strong></td><td>Importance for success in the industry</td><td>Industry-based; sum to 1.0</td></tr>
+          <tr><td><strong>Ratings</strong></td><td>1–4: effectiveness of the firm's strategies (company-based)</td><td>1–4: how well each firm performs on the factor</td></tr>
+          <tr><td><strong>Total</strong></td><td>1 to 4, average 2.5</td><td>One total per firm; compared across firms</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title"><span class="icon">📦</span> Table 3.9 — Ranking FedEx Against Rivals (a Different Method)</div>
+    <p style="margin-bottom:12px;">The slides also show a <strong>ranking</strong> table, built from comparably.com data, where <strong>1 = best and 5 = worst</strong> and the summed score is read as <strong>lower is better</strong> — the opposite direction from a CPM, where a higher rating is better.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Firm</th><th>Variable 1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>Summed score</th></tr></thead>
+        <tbody>
+          <tr><td>FedEx</td><td>3</td><td>1</td><td>2</td><td>2</td><td>1</td><td>2</td><td>3</td><td>1</td><td>1</td><td><strong>16</strong></td></tr>
+          <tr><td>UPS</td><td>5</td><td>3</td><td>3</td><td>3</td><td>3</td><td>4</td><td>4</td><td>3</td><td>3</td><td><strong>31</strong></td></tr>
+          <tr><td>DHL</td><td>1</td><td>2</td><td>1</td><td>1</td><td>2</td><td>1</td><td>1</td><td>4</td><td>2</td><td><strong>15</strong></td></tr>
+          <tr><td>TNT</td><td>4</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>5</td><td>–</td><td>–</td><td><strong>34+</strong></td></tr>
+          <tr><td>C. H. Robinson</td><td>2</td><td>4</td><td>4</td><td>4</td><td>4</td><td>3</td><td>2</td><td>2</td><td>4</td><td><strong>29</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:0.87rem; color:var(--text-muted); margin-top:10px;">Variables: 1 effectiveness of CEO · 2 product quality · 3 customers recommend company products to friends · 4 pricing · 5 customer service · 6 overall culture · 7 employees recommend company products to friends · 8 happiness of women employees · 9 happiness of minority employees. Each row's sum was recomputed and matches the slide (16, 31, 15, 34+, 29); TNT's total is "34+" because variables 8 and 9 are missing. <strong>DHL (15) narrowly beats FedEx (16).</strong></p>
+  </div>
+
+  <!-- NPS -->
+  <h2 id="nps" class="section-title">Net Promoter Score</h2>
+
+  <div class="card">
+    <p style="margin-bottom:12px;">The lecture introduces Net Promoter Score (NPS) as a way to get customer-based ratings for a CPM. Respondents answer on a 1–10 scale:</p>
+    <div class="grid-3">
+      <div class="compare-card teal-accent">
+        <h4>9–10 · Promoters</h4>
+        <p style="font-size:0.87rem; color:var(--text-muted);">They drive growth: enthusiastic advocates who bring in new customers through recommendations.</p>
+      </div>
+      <div class="compare-card gold-accent">
+        <h4>7–8 · Passives</h4>
+        <p style="font-size:0.87rem; color:var(--text-muted);">At risk: not actively harmful, but indifferent and prone to leaving for competitors.</p>
+      </div>
+      <div class="compare-card red-accent">
+        <h4>0–6 · Detractors</h4>
+        <p style="font-size:0.87rem; color:var(--text-muted);">They damage the brand: they can harm your reputation and discourage potential customers.</p>
+      </div>
+    </div>
+    <div class="formula-box" style="margin-top:16px;">
+      <div class="formula-title">Net Promoter Score</div>
+      <div class="formula">NPS = % Promoters − % Detractors</div>
+      <div class="formula-note">Passives are ignored in the subtraction. Result ranges from −100 to +100 (my statement; the slide only shows the example).</div>
+    </div>
+    <div class="key-point" style="margin-top:14px;"><strong>Slide example:</strong> out of 100 respondents, 50 promoters, 20 detractors, 30 passives → NPS = 50 − 20 = <strong>30</strong> (recomputed and confirmed). Action implied: work on turning passives into promoters.</div>
+  </div>
+
+  <!-- MIDTERM -->
+  <h2 id="midterm" class="section-title">The Mid-Term Link</h2>
+
+  <div class="card">
+    <p>The Mid-Term Group Project weights these three tools heavily: <strong>Porter's Five Forces 25%, EFE matrix 25%, Competitive Profile Matrix 25%</strong> (75% together), plus PESTEL 10%. The <a href="midterm.html">Mid-Term Project Hub</a> walks through the full brief, the grading rubric, and a worked method for each deliverable.</p>
+  </div>
+
+  <!-- EXAM -->
+  <h2 id="exam" class="section-title">Exam Preparation</h2>
+
+  <div class="exam-card">
+    <div class="q">Q1: Name and explain Porter's five forces. Which is the most powerful?</div>
+    <p>Rivalry among competing firms (the most powerful force), bargaining power of suppliers, bargaining power of consumers, potential entry of new competitors, and potential development of substitute products. Together they govern the profit structure of an industry by determining how the economic value it creates is apportioned.</p>
+  </div>
+
+  <div class="exam-card">
+    <div class="q">Q2: State five conditions that cause high rivalry among competing firms.</div>
+    <p>Any five of: many competing firms; firms of similar size; similar capabilities; rapidly changing demand; common price cuts; easy brand switching; high exit barriers; low entry barriers; high fixed costs; perishable products or short life cycles.</p>
+  </div>
+
+  <div class="exam-card">
+    <div class="q">Q3: What is backward integration? Give an example and the reason for it.</div>
+    <p>Gaining control or ownership of suppliers. Example: Almarai owns dairy farms, feed production, and grain farming abroad to reduce dependence on external feed suppliers and manage costs. Saudi Aramco's investment in refining and petrochemicals (including SABIC) reduces reliance on third-party processors.</p>
+  </div>
+
+  <div class="exam-card">
+    <div class="q">Q4: Describe the steps for building an EFE matrix and interpret a total weighted score of 3.5 and of 2.58.</div>
+    <p>Steps: list the key external factors (10 O and 10 T); weight each from 0.0 to 1.0 (summing to 1.0); rate each from 1 to 4 on how effectively current strategies respond; multiply weight by rating; sum the weighted scores. Totals run from 1 to 4 with an average of 2.5. A 3.5 means the firm's strategies effectively take advantage of opportunities and minimize the adverse effects of threats; a 2.58 is only slightly above average — a modestly effective response.</p>
+    <div class="hint">💡 Always say "above or below the 2.5 average" and by how much.</div>
+  </div>
+
+  <div class="exam-card">
+    <div class="q">Q5: Which of the following should NOT be listed as an opportunity in an EFE matrix: "Demand for online grocery grows 16%" or "Build a new distribution centre"? Why?</div>
+    <p>"Build a new distribution centre" is a strategy, not an opportunity. The lecture's own example: building a factory is a strategy, an increase in demand is an opportunity. Opportunities and threats are external factors beyond the firm's control; strategies are the firm's response to them.</p>
+  </div>
+
+  <div class="exam-card">
+    <div class="q">Q6: Compute the CPM totals: weights 0.50 / 0.30 / 0.20; Firm A ratings 4 / 2 / 3; Firm B ratings 2 / 3 / 4. Who leads?</div>
+    <p>Firm A: 0.50×4 + 0.30×2 + 0.20×3 = 2.00 + 0.60 + 0.60 = <strong>3.20</strong>. Firm B: 0.50×2 + 0.30×3 + 0.20×4 = 1.00 + 0.90 + 0.80 = <strong>2.70</strong>. Firm A leads, driven by the heavily weighted first factor.</p>
+    <div class="hint">💡 This is my own practice question (not from the slides); both totals are verified. Notice the weights sum to 1.0 and no two firms share a rating on any factor.</div>
+  </div>
+
+  <div class="exam-card">
+    <div class="q">Q7: How is a CPM different from an EFE matrix, and what are the common Five-Forces pitfalls?</div>
+    <p>An EFE matrix evaluates how well the firm handles external opportunities and threats; a CPM compares the firm with named competitors on critical success factors. Five-Forces pitfalls: equal weight on all five forces, defining the industry too broadly or narrowly, and labelling the industry attractive or unattractive rather than using the model to formulate strategy.</p>
+  </div>
+
+  <div class="exam-card">
+    <div class="q">Q8: Out of 200 customers, 90 are promoters, 40 are detractors, and 70 are passives. Compute the NPS and say what to do.</div>
+    <p>NPS = % promoters − % detractors = 45% − 20% = <strong>25</strong>. Passives are at risk of leaving for competitors, so work on turning the 70 passives into promoters.</p>
+    <div class="hint">💡 My own practice question; verified. Convert to percentages first.</div>
+  </div>
+
+  <!-- RECALL -->
+  <h2 id="recall" class="section-title">Active Recall</h2>
+
+  <div class="recall-item">
+    <div class="recall-q" onclick="toggleRecall(this)">What are Porter's five forces?<span class="toggle">▼</span></div>
+    <div class="recall-a">Rivalry among competing firms · bargaining power of suppliers · bargaining power of consumers · potential entry of new competitors · potential development of substitute products.</div>
+  </div>
+
+  <div class="recall-item">
+    <div class="recall-q" onclick="toggleRecall(this)">Which of the five forces is the most powerful?<span class="toggle">▼</span></div>
+    <div class="recall-a">Rivalry among competing firms.</div>
+  </div>
+
+  <div class="recall-item">
+    <div class="recall-q" onclick="toggleRecall(this)">What is competitive intelligence?<span class="toggle">▼</span></div>
+    <div class="recall-a">A systematic and ethical process for gathering and analyzing information about the competition's activities and general business trends to further a business's own goals.</div>
+  </div>
+
+  <div class="recall-item">
+    <div class="recall-q" onclick="toggleRecall(this)">What is backward integration?<span class="toggle">▼</span></div>
+    <div class="recall-a">Gaining control or ownership of suppliers.</div>
+  </div>
+
+  <div class="recall-item">
+    <div class="recall-q" onclick="toggleRecall(this)">When does supplier bargaining power increase?<span class="toggle">▼</span></div>
+    <div class="recall-a">When there are few suppliers, few substitutes, and high costs of switching raw materials.</div>
+  </div>
+
+  <div class="recall-item">
+    <div class="recall-q" onclick="toggleRecall(this)">When does substitute-product pressure increase?<span class="toggle">▼</span></div>
+    <div class="recall-a">When the prices of substitutes decrease and when consumers' switching costs decrease.</div>
+  </div>
+
+  <div class="recall-item">
+    <div class="recall-q" onclick="toggleRecall(this)">What are the three Five-Forces pitfalls?<span class="toggle">▼</span></div>
+    <div class="recall-a">Equal weight on all five forces; defining the industry too broad or too narrow; pinning "attractive" or "unattractive" labels on an industry instead of using the model to formulate strategies.</div>
+  </div>
+
+  <div class="recall-item">
+    <div class="recall-q" onclick="toggleRecall(this)">List the five steps of the EFE matrix.<span class="toggle">▼</span></div>
+    <div class="recall-a">1 List key external factors (10 O + 10 T) · 2 Weight 0.0–1.0 · 3 Rate effectiveness of current strategies 1–4 · 4 Multiply weight × rating · 5 Sum the weighted scores.</div>
+  </div>
+
+  <div class="recall-item">
+    <div class="recall-q" onclick="toggleRecall(this)">What are the minimum, maximum, and average EFE total weighted scores?<span class="toggle">▼</span></div>
+    <div class="recall-a">Lowest 1, highest 4, average 2.5.</div>
+  </div>
+
+  <div class="recall-item">
+    <div class="recall-q" onclick="toggleRecall(this)">What was the total weighted score of the cinema-complex EFE example?<span class="toggle">▼</span></div>
+    <div class="recall-a">2.58 — slightly above the 2.5 average.</div>
+  </div>
+
+  <div class="recall-item">
+    <div class="recall-q" onclick="toggleRecall(this)">How many critical success factors does the CPM template ask for, and should two firms share a rating?<span class="toggle">▼</span></div>
+    <div class="recall-a">12 factors. No — avoid giving the same rating to two or more firms on a factor, because the matrix exists to differentiate between firms.</div>
+  </div>
+
+  <div class="recall-item">
+    <div class="recall-q" onclick="toggleRecall(this)">How is Net Promoter Score calculated?<span class="toggle">▼</span></div>
+    <div class="recall-a">Percentage of promoters (9–10) minus percentage of detractors (0–6). Passives (7–8) are ignored. The slide example: 50 promoters, 20 detractors, 30 passives → NPS 30.</div>
+  </div>
+
+  <!-- GLOSSARY -->
+  <h2 id="glossary" class="section-title">Glossary</h2>
+
+  <div class="card">
+    <div class="glossary-item">
+      <div class="glossary-term">Five-Forces Model</div>
+      <div class="glossary-def">Porter's model of industry competition: rivalry, supplier power, consumer power, threat of new entrants, and threat of substitutes.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-term">Competitive Intelligence (CI)</div>
+      <div class="glossary-def">A systematic and ethical process for gathering and analyzing information about competitors and general business trends.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-term">Backward Integration</div>
+      <div class="glossary-def">Gaining control or ownership of suppliers.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-term">Barriers to Entry</div>
+      <div class="glossary-def">Obstacles that make it hard for new competitors to enter an industry — scale economies, capital needs, brand loyalty, regulation, patents, and similar.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-term">Substitute Product</div>
+      <div class="glossary-def">A product from another industry that meets the same customer need (e.g., ride-hailing for public transport).</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-term">EFE Matrix</div>
+      <div class="glossary-def">External Factor Evaluation matrix: a weighted, rated summary of how well a firm handles external opportunities and threats.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-term">Weighted Score</div>
+      <div class="glossary-def">A factor's weight multiplied by its rating.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-term">Delphi Method</div>
+      <div class="glossary-def">A structured group technique the lecture suggests for brainstorming and ranking EFE factors.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-term">Competitive Profile Matrix (CPM)</div>
+      <div class="glossary-def">A matrix comparing a firm with its major competitors across weighted critical success factors.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-term">Critical Success Factor</div>
+      <div class="glossary-def">A key variable, tailored to the industry, on which a firm and its competitors are weighted and rated in a CPM.</div>
+    </div>
+    <div class="glossary-item">
+      <div class="glossary-term">Net Promoter Score (NPS)</div>
+      <div class="glossary-def">Percentage of promoters (9–10) minus percentage of detractors (0–6), from a 1–10 recommendation scale.</div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="module-nav">
+    <a href="m03-external-audit-pestel.html" class="nav-link">
+      <span class="arrow">‹</span>
+      <span>
+        <span class="nav-label">Previous Module</span>
+        <span class="nav-title">M03: The External Audit &amp; PESTEL</span>
+      </span>
+    </a>
+    <a href="midterm.html" class="nav-link next">
+      <span class="arrow">›</span>
+      <span>
+        <span class="nav-label">Next</span>
+        <span class="nav-title">Mid-Term Project Hub</span>
+      </span>
+    </a>
+  </nav>
+
+</div>
+
+<script>
+function toggleRecall(el) {
+  el.classList.toggle('open');
+  el.nextElementSibling.classList.toggle('visible');
+}
+function toggleTheme() {
+  const root = document.documentElement;
+  root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  localStorage.setItem('sm-theme', root.getAttribute('data-theme'));
+}
+(function() {
+  const saved = localStorage.getItem('sm-theme');
+  if (saved) document.documentElement.setAttribute('data-theme', saved);
+})();
+</script>
+</body>
+</html>
